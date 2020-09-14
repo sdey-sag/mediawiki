@@ -13,8 +13,8 @@ strict: False
 keyed_groups:
   #  each aws ec2 instance has it own instance tags. create  
   #  a tag variable from those tags for ansible to use. 
-  #  if an EC2 tag:Name is acloudguru_machine, it'll be converted to the
-  #  Ansible tag variable name as follows: tag_Name_acloudguru_machine
+  #  if an EC2 tag:Name is mediawiki_machine, it'll be converted to the
+  #  Ansible tag variable name as follows: tag_Name_mediawiki_machine
   # which can then be passed as a variable value for the host via -e flag
   - key: tags
     prefix: tag
