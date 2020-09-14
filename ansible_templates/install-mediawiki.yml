@@ -59,7 +59,7 @@
         
     - name: Copy the db script to the remote server for execution
       copy:
-        src: /home/centos/mediawiki/ansible_templates/mysql-db-scripts/mediawiki_db_setup.sql
+        src: ./ansible_templates/mysql-db-scripts/mediawiki_db_setup.sql
         dest: /home/ec2-user
         owner: ec2-user
         group: ec2-user
